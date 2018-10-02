@@ -1,0 +1,27 @@
+<label>Username</label>
+
+<!-- <input 
+  type="text"
+  class="form-control"
+  (input)="cekusername($event)"
+  [(ngModel)]="usernameTampil" 
+  (ngModelChange) ='cek()'> -->
+
+<p>{{ usernameTampil }}</p>
+
+<button 
+  class="btn btn-success" 
+  [disabled]="cektombol"
+  (click)="Hasil()" input="hapus()">Tampilkan Detail</button>
+  
+<p>{{ usernameHasil }}</p><p>{{ usernameTampil }}</p>
+
+<app-server></app-server>
+
+<app-server></app-server>
+
+  <!--
+  <button 
+  class="btn btn-success" 
+  [disabled]="usernameTampil === ' ' "
+  (click)="Hasil()">Add Username</button>-->

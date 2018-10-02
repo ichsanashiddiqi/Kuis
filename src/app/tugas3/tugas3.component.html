@@ -1,0 +1,10 @@
+<button 
+  class="btn btn-success" 
+  (click)="onClick()" >Tampilkan Detail</button>
+<p>{{kalimat}}</p>
+<li *ngFor="let pnjg of log"
+[ngStyle]="{'backgroundColor': pnjg>=5 ? 'blue' :'white' }"
+[ngClass]="{'amin': pnjg>=5 ? true : false}">
+  {{pnjg}}
+  
+</li>
